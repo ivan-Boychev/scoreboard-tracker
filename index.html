@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Score Tracker</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="home">
+                <h3>HOME</h3>
+                <div class="score">0</div>
+                <div class="btn-row">
+                    <button onclick="addBy1Home(); scoreBoxColor()">+1</button>
+                    <button onclick="addBy2Home(); scoreBoxColor()">+2</button>
+                    <button onclick="addBy3Home(); scoreBoxColor()">+3</button>
+                </div>
+            </div>
+            <div id="guest">
+                <h3>GUEST</h3>
+                <div class="score">0</div>
+                <div class="btn-row">
+                    <button onclick="addBy1Guest(); scoreBoxColor()">+1</button>
+                    <button onclick="addBy2Guest(); scoreBoxColor()">+2</button>
+                    <button onclick="addBy3Guest(); scoreBoxColor()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button class="reset" onclick="reset()">RESET SCORE</button>
+        <script src="index.js"></script>
+    </body>
+</html>
